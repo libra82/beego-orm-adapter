@@ -1,4 +1,4 @@
-module github.com/casbin/beego-orm-adapter/v3
+module github.com/libra82/beego-orm-adapter/v3
 
 go 1.14
 
