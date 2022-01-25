@@ -34,7 +34,7 @@ type CasbinRule struct {
 }
 
 func init() {
-	orm.RegisterModel(new(CasbinRule))
+	//orm.RegisterModel(new(CasbinRule)) //项目中有
 }
 
 // Adapter represents the Xorm adapter for policy storage.
@@ -79,11 +79,11 @@ func (a *Adapter) registerDataBase(aliasName, driverName, dataSource string, par
 
 func (a *Adapter) open() error {
 	var err error
-
-	err = a.registerDataBase(a.dataSourceAlias, a.driverName, a.dataSourceName)
-	if err != nil {
-		return err
-	}
+	//项目中有
+	//err = a.registerDataBase(a.dataSourceAlias, a.driverName, a.dataSourceName)
+	//if err != nil {
+	//	return err
+	//}
 
 	a.o = orm.NewOrmUsingDB(a.dataSourceAlias)
 
